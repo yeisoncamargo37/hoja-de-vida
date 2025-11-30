@@ -1,0 +1,10 @@
+img {
+    width: 10%;
+    height: auto;
+    margin-left:80%;
+}
+div {
+    border: 1px solid black;
+}
+
+.titulo {text-align: center;}
