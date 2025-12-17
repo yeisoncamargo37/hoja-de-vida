@@ -1,96 +1,93 @@
 * {
- box-sizing: border-box; /* Incluye borde y padding en el ancho total */
+ box-sizing: border-box; 
  margin: 0;
  padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    width: 20%;
-    height:auto;
-    margin-left:40%
+.hoja-de-vida {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 10px auto;
+     background-color:rgb(189, 185, 185);
+ }
+
+
+.header {
+    padding: 10px;
+    background-color: rgb(3, 93, 105);
+    border-radius: 12px;
+    margin: 20px;
+    text-align: center;
+    border: 10px solid rgb(12, 12, 12);
 }
 
-.border {
-    border: 2px solid black;
+header::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
-.titulo {text-align: center;
-
-    margin-top: 2%;
-    margin-bottom:2%;
-
+.foto {
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
 }
 
-.contenedor {
+.informacion {
+    float: left;
+    margin-top: 30px;
+}
+
+.titulo {
+    font-size: 28px;
+}
+
+.cargo {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contenido {
     width: 100%;
-    height: 200px;
 }
+
+.contenido::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 
 .contenedor-derecha {
-    float: right;
+    width: 68%;
+    float: left;
+    margin: 20px 20px 20px 0;
+    padding: 30px;
+    background-color: rgb(136, 130, 130);
+    border-radius: 12px;
 
 }
 
 .contenedor-izquierda {
+    width: 28%;
     float: left;
-
+    margin: 20px;
+    background-color: rgb(168, 168, 168);
+    padding: 20px;
+    border-radius: 12px;
+    color: rgb(10, 10, 10);
 }
 
-.caja {
-    width: 50%;
-    height: 100%;
-
-    margin-bottom: 20px;
-
-    }
-
-.contenedor-derecha {
-    background-color: rgb(204, 204, 24);
+h2 {
+    margin-bottom: 15px;
 }
 
-.contenedor-izquierda{
-    background-color: rgb(121, 33, 33);
-    color: rgb(182, 182, 36);
-}
-
-.contenedor-izquierda h2 {
-    margin-bottom: 2%;
-
-    padding: 10px;
-}
-
-.contenedor-izquierda p {
-    
-
-    padding: 10px;
-}
-
-.seccion h2 {
-    margin-bottom: 1%;
-    padding: 10px;
-}
-.seccion p {
-    padding: 10px;
-}
-
-.seccion {
-    background-color: rgb(247, 247, 247);
-    margin-top: 2%;
-
-    margin-bottom: 2%;
-}
-
-.laboral{
-    background-color: rgb(229, 230, 231);
-
-    margin: 1%;
-
-    padding: 10px 20px;
-}
-
-.laboral h2 {
-    margin-bottom: 1%;
+p,li {
+    margin-bottom: 10px;    
 }
 
 
@@ -111,7 +108,3 @@ img {
     margin-bottom: 2%;
     text-align: center;
 }
-
-
-
-
